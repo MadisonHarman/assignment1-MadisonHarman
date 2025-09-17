@@ -2,7 +2,7 @@ require "minitest/autorun"
 require_relative "../../src/warmup.rb"
 require_relative "../../src/phonebook.rb"
 
-class PublicTests < MiniTest::Test
+class PublicTests < Minitest::Test # Had to use Minitest instead of MiniTest because of my version of Ruby.
     def setup
         @phonebook = PhoneBook.new
     end
